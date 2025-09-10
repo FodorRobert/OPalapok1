@@ -25,6 +25,11 @@ namespace OPalapok
             set { kor = value; }
         }
 
+        public override string ToString()
+        {
+            return $"A szeély neve {nev} életkora {kor}.";
+        }
+
         /*
         public Szemely(string nev, int kor)
         {
@@ -50,9 +55,8 @@ namespace OPalapok
 
             Szemely tanulo1 = new Szemely();
             tanulo1.Nev = "Gábor";
-            Console.WriteLine(tanulo1.Nev);
             tanulo1.Kor = 23;
-            Console.WriteLine(tanulo1.Kor);
+            Console.WriteLine(tanulo1);
 
             /*
             Szemely tanulo1 = new Szemely("Jani", 55);
