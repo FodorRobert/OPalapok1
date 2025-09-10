@@ -10,8 +10,8 @@ namespace OPalapok
     public class Szemely
     {
 
-        public string nev = "Peti";
-        public int kor = 34;
+        private string nev;
+        private int kor;
 
         public Szemely(string nev, int kor)
         {

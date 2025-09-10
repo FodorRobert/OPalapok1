@@ -1,0 +1,8 @@
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\bin\Debug\OPalapok.exe.config
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\bin\Debug\OPalapok.exe
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\bin\Debug\OPalapok.pdb
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\obj\Debug\OPalapok.csproj.AssemblyReference.cache
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\obj\Debug\OPalapok.csproj.CoreCompileInputs.cache
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\obj\Debug\OPalapok.exe
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\obj\Debug\OPalapok.pdb
+C:\Users\fodorr\source\repos\OPalapok\OPalapok\obj\Debug\OPalapok.exe.config
