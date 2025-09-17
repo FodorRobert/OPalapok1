@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,10 +85,9 @@ namespace OPalapok
 
         public int neptunKod;
 
-        public string nev
+        public void kiir()
         {
-            get { return nev; }
-            set { nev = value; }
+            nev = string.Empty;
         }
 
     }
@@ -105,6 +105,8 @@ namespace OPalapok
             Bankszamla bankszamla1 = new Bankszamla();
             bankszamla1.Egyenleg = 5700;
             Console.WriteLine(bankszamla1.Egyenleg);
+
+            
 
             /*
             Szemely tanulo1 = new Szemely("Jani", 55);
