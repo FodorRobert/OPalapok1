@@ -28,7 +28,7 @@ namespace OPalapok
 
         public override string ToString()
         {
-            return $"A szeély neve {nev} életkora {kor}.";
+            return $"A személy neve {nev} életkora {kor}.";
         }
 
         /*
@@ -83,7 +83,19 @@ namespace OPalapok
     public class Hallgato : Szemely
     {
 
-        public int neptunKod;
+        public string neptunKod;
+
+        public string NeptunKod
+        {
+            get { return neptunKod; }
+            set 
+            {
+                if (value.Length <= 6)
+                    neptunKod = value;
+                else
+                    Console.WriteLine("Nem megfelelő hosszúság");
+            }
+        }
 
         public void kiir()
         {
@@ -101,12 +113,17 @@ namespace OPalapok
             tanulo1.Nev = "Gábor";
             tanulo1.Kor = 23;
             Console.WriteLine(tanulo1);
+            Console.WriteLine("-----------------------------------------------------");
 
             Bankszamla bankszamla1 = new Bankszamla();
             bankszamla1.Egyenleg = 5700;
             Console.WriteLine(bankszamla1.Egyenleg);
+            Console.WriteLine("-----------------------------------------------------");
 
-            
+            Hallgato hallgato1 = new Hallgato();
+            hallgato1.neptunKod = "MHWLN9";
+            Console.WriteLine(hallgato1.neptunKod);
+            Console.WriteLine("-----------------------------------------------------");
 
             /*
             Szemely tanulo1 = new Szemely("Jani", 55);
