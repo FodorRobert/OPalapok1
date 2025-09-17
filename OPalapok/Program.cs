@@ -10,7 +10,7 @@ namespace OPalapok
     public class Szemely
     {
 
-        private string nev;
+        private protected string nev;
         private int kor;
 
         public string Nev
@@ -65,6 +65,7 @@ namespace OPalapok
             }
         }
 
+        /*
         private void Betesz()
         {
 
@@ -73,6 +74,20 @@ namespace OPalapok
         private void Kivesz()
         {
 
+        }
+        */
+
+    }
+
+    public class Hallgato : Szemely
+    {
+
+        public int neptunKod;
+
+        public string nev
+        {
+            get { return nev; }
+            set { nev = value; }
         }
 
     }
