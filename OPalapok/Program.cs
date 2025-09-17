@@ -104,6 +104,13 @@ namespace OPalapok
 
     }
 
+    public class Dolgozo : Szemely
+    {
+
+        public int Ber;
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -124,6 +131,24 @@ namespace OPalapok
             hallgato1.neptunKod = "MHWLN9";
             Console.WriteLine(hallgato1.neptunKod);
             Console.WriteLine("-----------------------------------------------------");
+
+            List<Hallgato> hallgatok = new List<Hallgato>();
+            for (int i = 0; i < 2; i++)
+            {
+                Hallgato hallgato = new Hallgato();
+                Console.WriteLine($"Kérem a(z) {i + 1} hallgato nevét: ");
+                hallgato.Nev = Console.ReadLine();
+                Console.WriteLine($"Kérem a(z) {i + 1} hallgato életkorát: ");
+                hallgato.Kor = int.Parse( Console.ReadLine() );
+                Console.WriteLine($"Kérem a(z) {i + 1} hallgato neptunkódját: ");
+                hallgato.NeptunKod = Console.ReadLine();
+                hallgatok.Add(hallgato);
+            }
+            Console.WriteLine($"A hallgatók neve: ");
+            foreach(var item in hallgatok)
+            {
+                Console.WriteLine(item.Nev);
+            }
 
             /*
             Szemely tanulo1 = new Szemely("Jani", 55);
