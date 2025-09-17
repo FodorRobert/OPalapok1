@@ -34,7 +34,8 @@ namespace OPalapok
         public Szemely(string nev, int kor)
         {
 
-
+            nev = Nev;
+            kor = Kor;
 
         }
 
@@ -48,6 +49,34 @@ namespace OPalapok
 
     }
 
+    public class Bankszamla
+    {
+
+        private int egyenleg;
+        public int Egyenleg
+        {
+            get { return egyenleg; }
+            set 
+            {
+                if (value >= 0)
+                    egyenleg = value;
+                else
+                    Console.WriteLine("Az érték nem lehet negatív");
+            }
+        }
+
+        private void Betesz()
+        {
+
+        }
+
+        private void Kivesz()
+        {
+
+        }
+
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -57,6 +86,10 @@ namespace OPalapok
             tanulo1.Nev = "Gábor";
             tanulo1.Kor = 23;
             Console.WriteLine(tanulo1);
+
+            Bankszamla bankszamla1 = new Bankszamla();
+            bankszamla1.Egyenleg = 5700;
+            Console.WriteLine(bankszamla1.Egyenleg);
 
             /*
             Szemely tanulo1 = new Szemely("Jani", 55);
